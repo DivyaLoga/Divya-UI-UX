@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+<!---- this css styling is for responsive navbar without javascript--->
+ body {
+          padding: 0;
+          margin: 0;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+        }
+
+        @media screen and (max-width: 992px) {
+          ul>li>a {
+            font-size: 10px;
+            padding: 0 5px;
+          }
+
+</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar navbar-light navbar-fixed-top navbar-expand-lg" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="nav nav-item">
+        <a class="nav nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav nav-link" href="#">Bootstrap</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav nav-link" href="#">Contact US</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav nav-link disabled" href="#">About</a>
+      </li>
+	  <li class="nav nav-item">
+        <a class="nav nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav nav-link" href="#">Bootstrap</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav nav-link" href="#">Contact US</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav nav-link disabled" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container" style="margin-top:50px">
+<p>Record	An item you are tracking in your database; if your data is like a spreadsheet, then a record is a row on the spreadsheet
+Field	A place where you store a value, like a name or address; using our spreadsheet example, a field would be a column on the spreadsheet
+Object	A table in the database; in that spreadsheet example, an object is a tab on the spreadsheet
+Org	Short for “organization,” the place where all your data, configuration, and customization lives. You and your users log in to access it. You might also hear this called “your instance of Salesforce”
+App	A set of fields, objects, permissions, and functionality to support a business process
+
+Accounts are the companies you’re doing business with. You can also do business with individual people (like solo contractors) using something called Person Accounts.
+ Contacts are the people who work at an Account. Leads are potential prospects. You haven’t yet qualified that they are ready to buy or what product they need.
+ You don’t have to use Leads, but they can be helpful if you have team selling, or if you have different sales processes for prospects and qualified buyers. 
+Opportunities are qualified leads that you’ve converted. When you convert the Lead, 
+you create an Account and Contact along with the Opportunity.
+
+
+
+you might think salesforce is just a CRM.it stores your customer data, gives you processess to nurture prospective customers,
+and provides way to collaborate with people you work with. and it does all those things.
+but saying that salesforce is just a CRM is saying like a house is just a kitchen. there's lot more to it than that
+
+it comes with lots of functionalities , out-of-box products and features that you can use to run your business.
+Here are some common things business want to do with salesforce and features we give you that support those activities
+
+
+
+
+
+YOU NEED TO:                             		  SO WE GIVE YOU:
+ Sell to prospects and customers                 Leads and opportunities to manage sales
+
+YOU NEED TO:                             		   SO WE GIVE YOU:
+ Help customers after the sales                    cases and communities for customer engagement
+
+YOU NEED TO:                             		   SO WE GIVE YOU:
+work on the go                 		  Customizable salesforce mobile app
+
+YOU NEED TO:                             		 SO WE GIVE YOU:
+collaborate with coworkers,                       Slack,chatter and communities to connect your company
+partners and customers                 
+
+YOU NEED TO:                             		SO WE GIVE YOU:
+ market to your audience                	 marketing cloud to manage your customer journey
+
+Depending on what your company purchases ,you can get these features and more without lifting a finger.
+you can customize and build whatever it is that makes your company unique and when you have a business application that’s unique to you, everyone is more successful
+
+High Impact, Low Effort:
+	this platform helps you move fast .part of that speed comes from replacing tasks you're used to doing by hands with more streamlined processes.it can accelerate your business
+
+Keep your eye out for processes with:
+o	heavy email collaboration
+o	reliance on spreadsheet
+o	shared local documents	
+o	time intensive, repetative manual steps
+o	impact on only few departments
+
+important points:
+	it is a cloud company.everything we offer resides in the trusted,multitenant cloud
+	its the foundation of the services.its powered by metadata and made up of different parts 
+		like data service,AI and robust API for development
+
+	all our app sits on top of the platform.
+	prebuilt offering like salescloud and marketing cloud along with apps you build using the platform
+		have consistent,powerful functionality
+	
+	everything is integrated.platform tech like predictive analytics and the development framework 
+		are built into evertyhin we offer and everything you build
+
+Why trust the cloud
+	at salesforce ,trust is the top priority.
+	not only you're keeping your sensitive data in your org. you're also building functionality vital to keep 
+your company success on salesforce  
+
+
+Multitenancy:
+	salesforce provides a core set of services to all our customers in the multitenant clouds.
+no matter the size of your business, you get access to the same computing power, data storage and core features
+	despite that fact that you are sharing space with other companies you can trust salesforce to keep your data secure
+	you can also trust that you're getting latest and the greatest feature with automatic,seamless upgrades 3x a year.
+	since it is a cloud service,you never have to install new features or worry about your hardware
+
+
+Metadata:
+	for ex:
+		a property can be located in boston,cost 500K$ and have 3 bedrooms
+		after stripping away all specific data.you're left with proprty object 
+along with its fields like address,price and number of bedrooms and any other customisation you have made
+
+
+API:
+  API allow different pieces of software to connect to each other and exchange information
+  
+
+AppExchange:
+	Salesforce has a community of partners that use the flexiblity of salesforce platform to build amazing apps and
+other solution that anyone can use.these offerings are available (some for fee and some at cost)for installation on AppExchange
+
+
+Steps to develop a good AppExchange strategy:
+	identify dept. that use or plan to use salesforce.these are your primary stakeholders
+	
+	research whats available on AppExchange that best meets your stakeholder requirements
+	dicuss business cases with dept. heads to determine exact needs
+		A)what business problems are you trying to solve?
+		B)what are your main pain points right now?
+		C)how many user need this app?
+		D)whats your budget?
+		E)whats your timeline?
+	
+	when you find an app that you think it meets your needs,download the app in the test environment
+		(like a free dev edition or sandbox)ensure that app installing doesnt interfere with anyother 
+		apps you have installed or any customisation you have made
+	sandboxes are copies of your organisation in a separate env.they are used for development and testing
+	
+	if you are choosing between multiple apps,take some time to evaluate what you have tested 
+	determine whether there are feature gaps or unwanted functionality.if necessary invite stakeholders to demo the apps and provide feedback	
+
+	you are ready to go.you will install and deploy your app in your production env.
+	make sure you keep your users in the loop about whats changing and provide training and documentation as necessary=oo
+
+
+Objects fields records:
+	objects are database tables 
+	fields on those objects are columns
+	records are rows in database
+
+standard objects:
+	comes with salesforce by default
+custom objects:
+	build by yourself
+
+Meta-Data driven development model is one of the key differences between developing on the platform 
+and developing outside of salesforce.because the platform is metadata aware,
+it can auto-generate a significant part of your experience for you.
+things like dialogs,record list,detail views and forms you would normally have to develop by yourself
+come for free.you even get all the functionality to CRUD custom object records in database
+all this prebuilt functionality frees-up your development time to work on more sophisicated custom feature.
+  
+
+it can be surprising to hear but salesforce platform encourages you to minimise code.
+its not beacause we dont love code
+its because the platform is meta-data driven architecture
+	
+
+there are 3 core programmatic  technologies to learn about as a salesforce developer:
+	
+	Lightning component framework:
+		a UI development framework similar to angular JS or react JS
+	
+	Apex:
+		Salesforce proprietary programming lanuage with java like syntax
+	
+	Visualforce:
+		a markup language that lets you create custom  salesforce pages with
+	code that looks a lot like html and optionally can use a powerful combination of apex and javascript 	
+
+
+If you're thinking, "Sales Cloud? I thought we were talking about Salesforce," fear not. You're in the right place to get your questions answered. Here are a few basic definitions to get started:
+
+CRM stands for customer relationship management. It's a system that keeps your customer information in one place, so your team can manage your contact with your customers with this full history in mind. This makes for happy customers.
+Salesforce is the first company that took CRM to the cloud, enabling companies to access all of their customer information online, from any device, anywhere in the world, 24/7.
+Sales Cloud is part of the CRM system that Salesforce offers. Sales Cloud is created especially for salespeople. Because it's our most popular product, many people say Salesforce when they actually mean Sales Cloud. Now you know!
+
+Commerce Cloud: Increase loyalty and retention with behavioral-influenced emails. Set up triggers in Journey Builder for commerce activities like making a purchase or abandoning a cart.
+Service Cloud: Open and close service cases, or launch a customer into a Journey from a case creation in Service Cloud.
+Sales Cloud: Onboard new customers, open new opportunities, and drive product adoption with Journeys triggered by actions in Sales Cloud.
+Experience Cloud: Encourage participation for unanswered posts, drive engagement and retention, and set up drip campaigns to follow-up on activities in Experience Cloud.
+
+
+how Marketing Cloud can empower you to:
+
+Know your customers.
+Unify first-party marketing data and augment it with other second- and third-party data sources.
+Create a unified view of customers across all business units (for example, marketing, customer service, commerce, and sales).
+Track customer interactions on your website.
+Monitor your brand on social media.
+Determine your most loyal and most at-risk customers.
+Discover new audiences.
+Optimize resource allocations by determining which customers are most likely to engage with a particular offer.
+Personalize with intelligence.
+Automate and segment marketing messages at scale.
+Align marketing voice, messaging, and campaigns across your entire business.
+Predict the best outcome for your customer.
+Make targeted content recommendations.
+Reengage customers who abandon an online shopping cart.
+Deliver unique experiences for each individual.
+Manage all your marketing interactions with customers in one place.
+Engage across the entire journey.
+Make a strong connection with customers, starting from their first interaction with your brand.
+Interact with customers in real time.
+Ensure you’re reaching your customers on the channel they prefer.
+Be prepared when a customer tweets negative comments about your product or service.
+Engage your customers with mobile messaging.
+Now check out these five digital marketing strategy tips.
+
+Tip 1: Put Yourself in Your Customers’ Shoes for Every Interaction
+
+Identify how your prospects and customers interact with your brand.
+Take note of the advertising, website, and marketing messaging, content, calls to action, process steps, data inputs, and duration between communications.
+Uncover challenges your customers can face when interacting with your brand.
+Tip 2: Inventory Your Existing Data Assets and Technologies
+
+Identify the technology platforms (CRM, master data management, ad serving, and so on) you already have in place. How do they impact your customer? How do they impact your customer’s experiences and interactions with your company?
+Identify which systems store personal identifiable information (PII)–for example, customer ID, email—and which don’t.
+Record the unique identifiers that exist in each technology. And use all this information to create data extensions and your data model in Marketing Cloud.
+Be sure to consider GDPR: Consult with your technology and data teams to determine how GDPR impacts your strategy.
+Tip 3: Prioritize Your Business and Customer Use Cases
+
+Determine the level of effort, business impact, and customer impact for each of your customers’ challenges. Use a grading score of 1–5 to help rate the challenges.
+Identify quick marketing wins based on the scores.
+Identify any technology overlap and technology gaps.
+Tip 4: Determine Your Success Criteria
+
+Assign key performance criteria to each customer challenge. For example, clicks, opens, conversion, likes, shares, cost-per-acquisition, and cost-per-conversion.
+Use and track your progress with SMART (specific, measurable, attainable, realistic, and timely) objectives.
+Tip 5: Create a Single View of the Customer
+
+Identify technology platforms that you can connect to maximize use of customer data. For example, connect your commerce platform to Marketing Cloud to deliver the right offer at the right time and increase conversions and order value.
+Document the complete 360-degree view of your customer based on all the first-, second-, and third-party data you collect across platforms.
+
+
+
+Create a Custom Object
+Let’s work alongside D’Angelo to see how he builds the Property object. We need this object later, so don’t skip these steps!
+
+Scroll to the bottom of this page and create a trailhead playground. Don’t skip this step! You need to use a fresh and clean Trailhead Playground for this module.
+
+Note: Even if you're completing this module as part of the Admin Beginner trail, be sure and create a new Trailhead Playground to complete these steps. You don't need to reinstall the Dreamhouse app in the new playground org.
+Once your playground is created (it takes a minute!), press Launch.
+Click the gear icon The setup gear. at the top of the page and launch setup.
+Click the Object Manager tab.
+Click Create | Custom Object in the top-right corner.
+For Label, enter Property. Notice that the Object Name and Record Name fields auto-fill.
+For Plural Label, enter Properties.
+Prior to saving the custom object, scroll to the bottom of the page and select the checkbox Launch New Custom Tab Wizard after saving this custom object.
+Leave the rest of the values as default and click Save.
+On the New Custom Object Tab page, click the Tab Style field and select a style you like. The style sets the icon to display in the UI for the object.
+Click Next, Next, and Save.
+
+
+
+
+Create a Custom Field
+The Property object we just created is pretty bare-bones. Let’s add some custom fields to it. Head back to your Trailhead Playground.
+
+
+From Setup, go to Object Manager | Property.
+In the sidebar, click Fields & Relationships. Notice that there are already some fields there. There’s a name field and some of the system fields we talked about earlier.
+Click New in the top right.
+For data type, select Currency.
+Click Next.
+Fill out the following:
+Field Label: Price
+Description: The listed sale price of the home.
+Check the Required box.
+Click Next, Next again, and then Save.
+
+
+
+Create a Record
+Let’s create a property record to see what you did.
+
+From the App Launcher (The App Launcher icon. in the navigation bar), find and select Sales.
+Click the Properties tab in the navigation bar. If you don’t see it, look under the More dropdown.
+Click New in the top corner.
+Enter a name and price for the property and click Save.
+
+
+
+
+To start, create a custom object called Favorite and add a field to the object.
+
+Click the Object Manager tab.
+Click Create | Custom Object in the top-right corner.
+For Label, enter Favorite.
+For Plural Label, enter Favorites.
+Check the box for Launch New Custom Tab Wizard after saving this custom object.
+Leave the rest of the values as default and click Save.
+On the New Custom Object Tab page, click the Tab Style field and select a style you like.
+Click Next, Next, and Save.
+Create a Lookup Relationship
+We’re going to create two custom relationship fields on the Favorite object. First, let’s create a lookup relationship that lists the users who select Favorite for a property.
+
+
+
+From Setup, go to Object Manager | Favorite.
+On the sidebar, click Fields & Relationships.
+Click New.
+Choose Lookup Relationship and click Next.
+For Related To, choose Contact. For the purposes of DreamHouse, contacts represent potential home buyers.
+Click Next.
+For Field Name, enter Contact, then click Next.
+Click Next, Next, and Save.
+Create a Master-Detail Relationship
+Now, we’re going to create a second relationship field. We want a master-detail relationship where Property is the master and Favorite is the detail.
+
+
+
+On the Object Manager page for the custom object, click Fields & Relationships.
+Click New.
+Select Master-Detail Relationship and click Next.
+For Related To, choose Property.
+Click Next.
+For Field Name, enter Property and click Next.
+Click Next, Next, and Save.
+Now, if you look at a Property record, you’ll see Favorites listed in the related tab.
+Add a Favorite Property
+Let's take a look at how to view favorite properties.
+
+
+
+From the App Launcher (The App Launcher icon. in the navigation bar), find and select Sales.
+Click the Properties tab in the navigation bar. If you don’t see it, look under the More dropdown.
+Click the name of a Property record.
+Click Related. You’ll see Favorites (0) in the related tab.
+Click New.
+Enter a name for Favorite Name, then click Save.
+
+
+Create an Object with Schema Builder
+You can also create objects using Schema Builder. If you prefer, you can create objects in this visual interface if you’re designing your system and want to be able to revise all your customizations on the spot. Let’s see how it’s done.
+
+In the left sidebar, click the Elements tab.
+Click Object and drag it onto the canvas.
+Enter information about your object. You can make it whatever you want!
+Click Save.
+Your new object appears in the Schema Builder. That was quick! Next, let’s add some fields.
+
+
+
+Create Fields with Schema Builder
+Creating fields with Schema Builder is just like creating objects.
+From the Elements tab, choose a field type and drag it onto the object you just created. Notice that you can create relationship fields, formula fields, and normal fields in Schema Builder.
+Fill out the details about your new field.
+Click Save.
+
+
+Follow these steps before you start importing any data.
+Use your existing software to create an export file.
+Clean up the import file for accuracy and consistency. This involves updating the data to remove duplicates, delete unnecessary information, correct spelling and other errors, and enforce naming conventions.
+Compare your data fields with the Salesforce fields you can import into, and verify that your data will be mapped into the appropriate Salesforce fields. You might need to fine-tune the mapping before starting the import. For details, see Field Mapping for Data Sources in the online help.
+Make any configuration changes required in Salesforce to handle the imported data. For example, you might need to create new custom fields, add new values to picklists, or temporarily deactivate workflow rules.
+
+
+
+Use the Data Import Wizard
+Once you have created an export file and cleaned up the data for import, follow these steps to import data using the Data Import Wizard.
+Start the wizard.
+From Setup, enter Data Import Wizard in the Quick Find box, then select Data Import Wizard. 
+Review the information provided on the welcome page, then click Launch Wizard!
+Choose the data that you want to import.
+To import accounts, contacts, leads, solutions, person accounts, or campaign members, click Standard Objects. To import custom objects, click Custom Objects.
+Specify whether you want to add new records to Salesforce, update existing records, or add and update records simultaneously.
+Specify matching and other criteria as necessary. Hover over the question marks for more information about each option.
+Specify the file that contains your data. You can specify your data file by dragging the CSV to the upload area of the page or by clicking the CSV category you’re using and then navigating to and selecting the file.
+Choose a character encoding method for your file. Most users can accept the default character encoding.
+Click Next. 
+
+
+Map your data fields to Salesforce data fields. The Data Import Wizard tries to map as many of your data fields as possible to standard Salesforce data fields. If Salesforce can’t automatically map fields, however, you do it manually. Unmapped fields are not imported into Salesforce. To see a list of standard Salesforce data fields, from Setup, at the top of the page, click Object Manager. Click the object whose fields you’re interested in, and click Fields & Relationships. For example, if you want to see a list of standard Salesforce fields for leads, click Object Manager | Lead | Fields & Relationships.
+Scan the list of mapped data fields and locate any unmapped fields.
+Click Map to the left of each unmapped field.
+In the Map Your Field dialog box, choose the Salesforce fields you want to map to and click Map. The Map Your Field dialog box also gives you the option of saving data from unmapped fields in a general notes field for accounts and contacts. To do so, choose Account Note or Contact Note from the Map To drop-down list and click Map.
+To change mappings that Salesforce performed automatically, click Change to the left of the appropriate field, then choose the Salesforce fields you want to map to and click Map.
+Click Next.
+Review and start your import.
+Review your import information on the Review page. If you still have unmapped fields that you want to import, click Previous to return to the previous page and specify your mappings.
+Click Start Import.
+Check import status. From Setup, enter “Bulk Data Load Jobs” in the Quick Find box, then select Bulk Data Load Jobs.  The user who starts the data import receives a status email when the import is completed.
+
+
+Follow these steps to export data using the Data Export Service.
+
+From Setup, enter Data Export in the Quick Find box, then select Data Export and Export Now or Schedule Export.
+The Export Now option prepares your files for export immediately. This option is only available if enough time has passed since your last export.
+The Schedule Export option allows you to schedule the export process for weekly or monthly intervals.
+Select the desired encoding for your export file.
+If you want images, documents, attachments, and so on included in your data, select the appropriate options.
+Select Replace carriage returns with spaces to have spaces instead of carriage returns or line breaks in your export files. This is useful if you plan to use your export files for importing or other integrations.
+If you're scheduling your export, select the frequency (only available for organizations with monthly exports), start and end dates, and time of day for your scheduled export.
+Under Exported Data, select the types of data to include in your export. We recommend that you select Include all data if you’re not familiar with the terminology used for some of the types of data.
+Click Start Export or Save. Salesforce creates a zip archive of CSV files and emails you when it's ready. Exports will complete as soon as possible, however we can't guarantee the date and time the export will complete. Large exports are broken up into multiple files. Follow the link in the email or click Data Export to download the zip file. Zip files are deleted 48 hours after the email is sent.
+
+
+Create a Lightning App
+Creating and editing a Lightning app is a cinch. As Ursa Major Solar’s admin, Maria needs an app that puts everything about customer energy assessments at her consultants’ fingertips. Let’s dive right in and try it out. In a few simple steps, you can give an app a name, set its primary color, upload a logo, specify which items appear in the app’s navigation bar, and assign the app to user profiles.
+From the Home tab in Setup, enter App in the Quick Find box, then select App Manager.
+Click New Lightning App.
+Walk through the Lightning App Wizard, creating an app with these parameters.
+
+Click Save and Finish to exit the wizard.
+From the App Launcher (App Launcher icon), find and select Energy Consultations. 
+
+Check out the new app! It’s got all the custom branding you gave it: a custom icon in the upper left and the custom color you assigned to it. Because Home is first in the navigation bar, it becomes the first page your users see when they open the app. 
+
+
+
+Create a Compact Layout
+When you create a custom object, it’s automatically assigned to a system default compact layout, which has only one field on it: the object name. Maria wants to call attention to the most important fields on the object when her users view the audit records. Let’s make that happen by creating a custom compact layout for the Energy Audit custom object.
+First, find and open the compact layouts node in Setup for Energy Audit.
+From Setup, click Object Manager.
+Click Energy Audit to open the object and then click Compact Layouts.
+You can see that the System Default compact layout is assigned as the primary compact layout right now. We’re going to change that.
+Click New.
+Give the compact layout a label: Energy Audit Compact Layout.
+Add these fields to the compact layout, in this order:
+Energy Audit Name
+Account
+Annual Energy Usage (kWh)
+Average Annual Electric Cost
+Type of Installation
+Click Save.
+Now let’s set the compact layout that you created as the primary compact layout for the object. This step makes the compact layout the new default for the Energy Audit custom object.
+Click Compact Layout Assignment and then Edit Assignment.
+Select Energy Audit Compact Layout and click Save.
+
+
+
+
+Create a Page Layout
+Maria wants to create an Energy Audit page layout just for her sales team so they can have the necessary field and related list information at their fingertips when they view the Energy Audit records.
+
+When the Energy Audit custom object was created, a system default Energy Audit page layout was created too. Right now, everyone in the org who views an Energy Audit record sees the information from that default layout. Maria is going to create a layout just for the sales people.
+
+Let’s follow along.
+
+From Setup, click Object Manager.
+Click Energy Audit, then Page Layouts.
+You should see the system default Energy Audit layout that we mentioned.
+Click New.
+You have two options at this point. You can create a page layout from scratch, or you can choose an existing page layout to clone. Because Maria wants to build on what’s already there for Energy Audit, she’s going to clone the default layout.
+Select Energy Audit Layout.
+Name the new layout Energy Audit Sales Layout.
+Click Save.
+Scroll down to the Energy Audit Detail section.
+Here’s a comparison of the page layout field details and the Energy Audit fields with the default configuration.
+
+Move Audit Notes and Type of Installation to the right column, above Owner.
+Move Account below Energy Audit Name. 
+
+Click Quick Save.
+Nice! But there’s more to do. Because Energy Audit is a custom object, it doesn’t have any related lists...yet. Let’s add one.
+Scroll down to the Related Lists section.
+In the palette, click Related Lists, and drag the Files element down to the Related Lists section.
+With the Files related list, Ursa Major Solar sales reps can add files to a record and see a list of files associated with the record.
+Click Quick Save again, then click Yes.
+We’re done with the page layout for now, but no one can see it. Time to assign it to profiles.Click Quick Save.
+Nice! But there’s more to do. Because Energy Audit is a custom object, it doesn’t have any related lists...yet. Let’s add one.
+Scroll down to the Related Lists section.
+In the palette, click Related Lists, and drag the Files element down to the Related Lists section.
+With the Files related list, Ursa Major Solar sales reps can add files to a record and see a list of files associated with the record.
+Click Quick Save again, then click Yes.
+We’re done with the page layout for now, but no one can see it. Time to assign it to profiles.
+
+
+Assign a Page Layout to Profiles
+Maria wants Ursa Major Solar’s salespeople to see this new page layout. She’s going to assign it to her sales team’s user profile so when they view Energy Audit records, they’ll see the revised view of the fields and the new related list. Let’s get started.
+
+If you’re not already in the Energy Audit object, from Setup, click Object Manager | Energy Audit.
+Click Page Layouts, then Page Layout Assignment. You can see the list of profiles and the page layout assigned to each one.
+Click Edit Assignment.
+Select the Custom: Sales Profile row.
+From the Page Layout To Use field, select Energy Audit Sales Layout.
+Select the System Administrator row. Normally, Maria would select only the Custom: Sales Profile row, but since you’re logged in as a System Administrator, we select that too so that you can check out how the new page layout looks.
+From the Page Layout To Use field, select Energy Audit Sales Layout, then click Save. Let’s go see the results!
+From the App Launcher, find and select Energy Audits, then open an audit record. Look at the Details tab. It’s more condensed and efficient now.
+
+
+Customize the Navigation Menu
+OK, enough preamble! Roll up your sleeves and get ready to help DreamHouse brokers zip around in the mobile app like seasoned pros.
+
+
+From Setup, enter App Manager in the Quick Find box, then select App Manager.
+Click the arrow next to the Sales app (the developer name is LightningSales), then select Edit.
+Click App Options.
+Ensure that the app is enabled for mobile by verifying that the radio button for Desktop and phone is checked.
+Click Navigation Items.
+Rearrange the selected items using the arrows so that the top five are in the following order: Home, Opportunities, Contacts, Tasks, and Dashboards. The first four items in the list become the first four icons in the navigation bar for your users on mobile, excluding Home that is only used for desktop.
+click save
+
+Test Your Changes in the Salesforce Mobile App
+You know the drill! Let’s see how the improved navigation menu looks in the mobile app.
+
+Open Salesforce on your mobile device.
+TapSalesforce mobile app menu icon.to open the navigation menu.
+Make sure you’re on the Sales Lightning app that you edited by looking at the first app listed. If you’re not on the correct app, tap App Launcher, then tap Sales to open the Sales app.
+Pull down to refresh.
+
+
+
+To summarize, there are four basic scenarios in user engagement.
+
+Scenario	Description	Examples
+
+Onboarding	
+Show users where to begin and what’s new or changed. Get them to the “aha moment” quickly.	
+
+First time in trial or new feature area
+Setting up a new feature
+First time in a new release
+
+Feature discovery and adoption	
+Help beginners become experts. Help experienced users learn new things. Raise awareness of new features and releases.	
+
+New feature enabled
+Encourage best practices
+
+Troubleshooting help	
+Provide just-in-time prompts that help users learn by doing. Offer reliable resources and access to support.	
+
+User is off course
+User has a question
+
+Deeper learning	
+Give users the skills and information they need to get as much value as possible out of your product or application.
+User wants a deeper understanding of a new feature
+
+
+
+To create your own prompts and walkthroughs, follow these steps.
+
+Click Setup and select Setup.
+In Quick Find, enter in-app, and then select In-App Guidance.
+Click Add. The In-App Guidance Builder opens in a new tab.
+In the builder, navigate to the page where you want to add the prompt or walkthrough and click Add. A sidebar opens on the right side for you to start authoring.
+Specify if you want a single prompt or a walkthrough and the type, location, and position of the prompt. Then, write the content.
+To specify the title, body, and button text, select Next. You can also include an image, or for docked prompts, embed a video.
+Click Save. A window opens for additional settings. You can access these settings again by clicking Setup in the builder header while editing a prompt or walkthrough.
+Specify an action button or link, schedule, profile, permissions, active status, and name.
+Save your changes.
+When you’re satisfied, click Done.
+
+
+
+
+Levels of Data Access
+You can control which users have access to which data in your whole org, a specific object, a specific field, or an individual record.
+
+Organization
+For your whole org, you can maintain a list of authorized users, set password policies, and limit logins to certain hours and locations.
+
+
+Objects
+Access to object-level data is the simplest thing to control. By setting permissions on a particular type of object, you can prevent a group of users from creating, viewing, editing, or deleting any records of that object. For example, you can use object permissions to ensure that interviewers can view positions and job applications but not edit or delete them. You can use profiles to manage the objects that users can access and the permissions they have for each object. You can also use permission sets and permission set groups to extend access and permissions without modifying users' profiles.
+
+Fields
+You can restrict access to certain fields, even if a user has access to the object. For example, you can make the salary field in a position object invisible to interviewers but visible to hiring managers and recruiters.
+
+Records
+You can allow particular users to view an object, but then restrict the individual object records they're allowed to see. For example, an interviewer can see and edit her own reviews, but not the reviews of other interviewers. You can manage record-level access in these four ways.
+
+Organization-wide defaults specify the default level of access users have to each others’ records. You use org-wide sharing settings to lock down your data to the most restrictive level, and then use the other record-level security and sharing tools to selectively give access to other users.
+Role hierarchies give access for users higher in the hierarchy to all records owned by users below them in the hierarchy. Role hierarchies don’t have to match your organization chart exactly. Instead, each role in the hierarchy should represent a level of data access that a user or group of users needs.
+Sharing rules are automatic exceptions to organization-wide defaults for particular groups of users, so they can get to records they don’t own or can’t normally see. Sharing rules, like role hierarchies, are only used to give additional users access to records. They can’t be stricter than your organization-wide default settings.
+Manual sharing allows owners of particular records to share them with other users. Although manual sharing isn’t automated like org-wide sharing settings, role hierarchies, or sharing rules, it can be useful in some situations, such as when a recruiter going on vacation needs to temporarily assign ownership of a job application to someone else.
+
+
+
+
+Create a User
+You can create users—even multiple users—in just a few clicks. It’s as simple as entering a username, alias, and email, and selecting a role, license, and profile. Many more options are available, of course, but that’s all you need to get started.
+
+Salesforce auto-generates a password and notifies new users immediately. Users can change or add to their own personal information after they log in.
+
+From Setup, in the Quick Find box, enter Users, and then select Users.
+Click New User. Or you can click Add Multiple Users to add up to ten users at a time. 
+Enter the user’s name, email address, and a unique username in the form of an email address. By default, the username is the same as the email address.
+Select the user license this user will have. The license determines which profiles are available for each user.
+Select a profile, which specifies the user’s minimum permissions and access settings.
+Select the option to generate a new password and notify the user, then save.
+
+
+Deactivate a User
+You can't delete a user, but you can deactivate an account so a user can’t log in. Deactivated users lose access to all records. (That includes records that are shared with them individually and records shared with them as team members.) However, you can still transfer this data to other users and view the names on the Users page.
+From Setup, in the Quick Find box, enter Users, and then select Users
+Click Edit next to the name of the user you want to deactivate.
+Clear the Active checkbox and click Save. If you can’t immediately deactivate an account (for example, when the user is selected in a custom hierarchy field), you can freeze their account. That prevents the user from logging in to your organization while you’re working on deactivating them.
+On the Users page in Setup, click the username of the user whose account you want to freeze.
+Click Freeze.
+
+
+
+Set Password Policy
+You can configure several settings to ensure that your users’ passwords are strong and secure.
+Password policies
+Set password and login policies, such as specifying an amount of time before all users’ passwords expire and the level of complexity required for passwords.
+
+User password expiration
+
+Expire the passwords for all the users in your org, except for users with “Password Never Expires” permission.
+
+User password resets
+
+Reset the password for specified users.
+
+Login attempts and lockout periods
+
+If a user is locked out due to too many failed login attempts, you can unlock the person’s access.
+
+
+From Setup, in the Quick Find box, enter Password Policies, and then select Password Policies. 
+
+Customize the password settings.
+How long should passwords be? Longer is usually better, within reason.
+How complex do you want your passwords? You can require alphabetical, numeric, uppercase, lowercase, or special characters.
+How many days is a password valid?
+How many times can someone try to log in with invalid credentials before being locked out?
+Choose what to do about forgotten passwords and locked accounts.
+Click Save.
+
+
+Specify Trusted IP Ranges for the Org
+The first time you log in to Salesforce, the IP address is cached in your browser. Anytime you log in from a different IP address, you will be asked to verify your identity, typically by entering a verification code. You can bypass this step for trusted IP ranges. For example, suppose that your users should be able to log in without entering a verification code whenever they are in the office.
+From Setup, in the Quick Find box, enter Network Access, and then select Network Access.
+Click New.
+Enter the start and end point of the range of trusted IP addresses, and click Save.
+If you have an address outside this range, you aren't excluded from logging in. You simply have to verify your identity by entering a verification code.
+Restrict Login Access by IP Address Using Profiles
+By default, Salesforce doesn't restrict locations for login access. If you do nothing, users can log in from any IP address. You can restrict where users can log in from using profiles. For example, suppose that certain users shouldn’t be able to log in if they’re using an IP address outside of the office.
+From Setup, in the Quick Find box, enter Profiles, and then select Profiles.
+Select a profile and click its name.
+Click Login IP Ranges. If you don't have Enhanced Profile Interface enabled, scroll down to the Login IP Range related list.
+Click New. 
+Enter the start and end point of the range of trusted IP addresses, and click Save.
+
+
+
+Restrict Login Access by Time
+For each profile, you can specify the hours when users can log in. For example, if you decide your call center employees really only need to look at customer data while they're taking phone calls nine to five, you can make it so they can't log in during evenings and weekends.
+From Setup, in the Quick Find box, enter Profiles, and then select Profiles.
+Click the profile you want to change.
+Under Login Hours, click Edit.
+Set the days and hours when users with this profile can log in to the organization.
+To allow users to log in at any time, click Clear all times.
+To prohibit users from using the system on a specific day, set the start and end times to the same value. 
+
+
+
+Managing Profiles
+The profile overview page provides an entry point for all of the settings and permissions for a single profile. From Setup, in the Quick Find box, enter Profiles, and then select Profiles. Click the profile you want to view.
+
+Create a Profile
+The easiest way to create a profile is to clone an existing profile that’s similar to the one you want to create, and then modify it.
+
+Salesforce has an enhanced profile user interface that makes it easy to find and modify profile settings. That’s what we’ll use for this exercise. From Setup, in the Quick Find box, enter User Management Settings, and then select User Management Settings. Enable Enhanced Profile User Interface.
+
+From Setup, in the Quick Find box, enter Profiles, and then select Profiles.
+Click Clone next to a profile similar to the one you want to create.
+Give your new profile a name, and save.
+
+
+Assign a Profile
+After you've created a profile, customize it to match the needs of a specific set of users, and then assign the profile to those users.
+Make sure the Enhanced Profile User Interface is enabled in User Management Settings.
+From Setup, in the Quick Find box, enter Profiles, and then select Profiles.
+Click the name of the profile that you want to customize.
+Edit the profile, setting the most restrictive settings and permissions you can for this user type. (Don’t worry about blocking the user from doing things they need to do. We'll open up more possibilities for them later, when we give them permission sets.)
+From Setup, in the Quick Find box, enter Users, and then select Users.
+Click Edit next to the user that you want to assign the profile to.
+In the Profile dropdown, select the profile that you just set up. Then, click Save.
+
+
+Managing Permission Sets
+A permission set’s overview page is the entry point for all of the permissions in a permission set. To open a permission set overview page, from Setup, in the Quick Find box, enter Permission Sets, and then select Permission Sets. Select the permission set you want to view. In each permission set, permissions and settings are organized into app settings, system settings, object permissions, and field permissions.
+
+Create a Permission Set
+Create a permission set to grant additional permissions to specific users, on top of their existing profile permissions, without having to modify existing profiles, create new profiles, or grant an administrator profile.
+From Setup, in the Quick Find box, enter Permission Sets, and then select Permission Sets.
+Click Clone next to the set you want to copy. A cloned permission set has the same user license as the original. To create a set with a different license, click New (1) instead.
+
+Enter a label and a description. The API name is a unique name used by the API and managed packages. It automatically replicates the label, but you can modify it.
+If this is a new permission set, select a user license option.
+If you plan to assign this permission set to multiple users with different licenses, select --None--.
+If only users with one type of license will use this permission set, select that user license.
+Click Save to go back to the permission set overview page.
+In the permission set toolbar, click Manage Assignments, then click Add Assignments.
+Select the users to assign to this permission set and click Assign. Review the messages on the Assignment Summary page. If any users weren’t assigned, the Message column tells you why.
+Click Done to return to a list of the users assigned to the permission set.
+
+
+Restrict Field Access with a Profile
+You apply field settings by modifying profiles or permission sets. Let’s try restricting a user’s general access with a profile. Then we can expand it as needed with a permission set.
+
+From Setup, in the Quick Find box, enter Profiles, and then select Profiles.
+Select the profile you want to change. 
+Click Object Settings and select the object for which you want to update the field settings.
+Click Edit.
+Under Field Permissions, for each field, specify the kind of access you want for users with this profile, and save your settings.
+
+
+
+Set Your Org-Wide Sharing Defaults
+Use org-wide defaults to specify the baseline level of access that the most restricted user should have.
+From Setup, in the Quick Find box, enter Sharing Settings, and then select Sharing Settings.
+Click Edit in the Organization-Wide Defaults area. 
+Note that some standard objects use different org-wide default options. Custom object org-wide default options include Private, Public Read Only, or Public Read/Write.
+For each object, select the default internal access and default external access. 
+To disable automatic access using your hierarchies, deselect Grant Access Using Hierarchies for any custom object that doesn't have a default access of Controlled by Parent.
+
+
+
+Define a Role Hierarchy
+Implementing a role hierarchy in the platform is easy once you have an idea of what the hierarchy should look like. It’s best to start with your company’s org chart and then consolidate different job titles into single roles wherever possible.
+
+For example, if a software development group has a staff software engineer and a junior software engineer, these positions can be consolidated into a single Software Engineer role in the hierarchy. Once that’s done, you can get started defining the role hierarchy itself.
+From Setup, in the Quick Find box, enter Roles, and then select Roles. If you see an introductory splash page called Understanding Roles, click Set Up Roles at the bottom of the page to skip to the actual tool. The default view for this page is the tree view, as indicated in the drop-down list on the far right side of the Role Hierarchy title bar. When creating a role hierarchy, it's probably easiest to stick with this or the list view, because they both make it easy to see how the roles all fit together in the hierarchy. The sorted list view is best if you know the name of a role that you want to find but aren't sure where it fits in the hierarchy, or if you don't want to click open all the tree nodes. For our purposes, we'll stick with the tree view. 
+When you first start defining a role hierarchy, the tree view displays a single placeholder node with the name of your org. From this point, we need to add the name of the role that is highest up in the hierarchy—in our case, the CEO. If you’re building your app with a free Developer Edition or Trailhead Playground org, you may have a role hierarchy predefined as a sample. That's all right. You can still follow along and create some more roles.
+Just under the company name, click Add Role. If the CEO role already exists, click Edit.
+In the Label text box, enter CEO. The Role Name text box autopopulates with CEO.
+In the This role reports to text box, click the lookup icon Lookup icon and click Select next to the name of your org. By choosing the name of the org in the This role reports to text box, we’re indicating that the CEO role is a top-level position in our role hierarchy and doesn't report to anyone.
+In the Role Name as displayed on reports text box, enter CEO. This text is used in reports to indicate the name of a role. Since a long role name, like Vice President of Product Development, takes extra space in your report columns, we recommend using a short but readable abbreviation.
+Leave any other options, such as Opportunity Access, set to their defaults, and save. These access options don't have anything to do with our Recruiting app, and only appear if you have the org-wide defaults for a standard object set to a level more restrictive than Public Read/Write.
+Now that you’ve created your first role, you can assign the appropriate user to it. Click CEO, and on the CEO role detail page, click Assign Users to Role. 
+In the Available Users drop-down list, select All Unassigned.
+Choose a user from the list, and click Add to move her to the Selected Users for CEO list, then save.
+
+
+
+Define a Public Group
+Before creating a sharing rule, it’s important to set up the appropriate public group. A public group is a collection of individual users, other groups, individual roles or territories, and/or roles or territories with their subordinates that all have a function in common. For example, users with the Recruiter profile as well as users in the SW Dev Manager role both review job applications. 
+
+Using a public group when defining a sharing rule makes the rule easier to create and, more important, easier to understand later, especially if it's one of many sharing rules that you're trying to maintain in a large organization. Create a public group if you want to define a sharing rule that encompasses more than one or two groups or roles, or any individual.
+From Setup, in the Quick Find, enter Public Groups, and then select Public Groups.
+Click New. 
+
+Give your group a label. The Group Name text box populates automatically when you click it. This is the unique name used by the API and managed packages.
+In the Search drop-down list, choose from which individual users, other groups, or roles you’ll select users, and whether their subordinates are included. You can include a combination of member types in your public groups.
+In the Available Members list, select users, then click Add.
+Click Save.
+
+
+
+Define a Sharing Rule
+You can define a sharing rule for a single public group, role, or territory. You can also define a sharing rule for a role plus its subordinates or for a territory plus its subordinates.
+
+From Setup, in the Quick Find box, enter Sharing Settings, and then select Sharing Settings. This is the same page used to define org-wide defaults.
+In the Manage sharing settings for drop-down list, choose the object for which to create the sharing rule. Choosing an object in this drop-down list allows you to focus in on the org-wide defaults and sharing rules for a single object at a time rather than looking at all of them in a long page—a useful thing if you've got a large org with multiple custom objects.
+In the Sharing Rules area, click New and give your rule a label. The Rule Name text box populates automatically when you click it.
+For the rule type, you can choose whether the sharing rule is based on the owner or based on criteria that records must match to be included. For this sharing rule, select Based on record owner.
+For Select which records to be shared, select a category from the first dropdown list, and a set of users from the second dropdown list or lookup field.
+For Select users to share with, specify the users who get access to the data.
+Select a sharing access setting.
+Click Save.
+
+
+Find the Formula Editor
+Before we dive into writing formulas, let’s locate the formula editor and get to know its features.
+
+You can create custom formula fields on any standard or custom object. To start, we’ll create a formula on the Opportunity object. Follow these steps to navigate to the formula editor.
+
+From Setup, open the Object Manager and click Opportunity.
+In the left sidebar, click Fields & Relationships.
+Click New.
+Select Formula and click Next.
+In Field Label, type My Formula Field. Notice that Field Name populates automatically.
+Select the type of data you expect your formula to return. For example, if you want to write a formula that calculates the commission a salesperson receives on a sale, you select Currency. For now, pick Text.
+Click Next. You’ve arrived at the formula editor! Time for our tour.
+
+
+Creating the Summary Field
+From Setup, open Object Manager and click Account.
+On the left sidebar, click Fields & Relationships.
+Click New.
+Choose the Roll-Up Summary field type, and click Next.
+For Field Label, enter Sum of Opportunities and click Next.
+The Summarized Object is the detail object that you want to summarize. Choose Opportunities.
+Choose the SUM summary type and choose Amount as the Field to Aggregate.
+Click Next, Next, and Save.
+
+
+Creating a Validation Rule
+From Setup, go to Object Manager and click Account.
+In the left sidebar, click Validation Rules.
+Click New.
+Enter the following properties for your validation rule:
+     a. Rule Name: Account_Number_8_Characters
+     b. Error Condition Formula:
+Error Message: Account number must be 8 characters long.
+To check your formula for errors, click Check Syntax.
+Click Save to finish.
+
+
+
+To install an app, log in to AppExchange, find the app you want, and click Get it Now. During the installation process, you’ll need to make a few decisions.
+Some of the key ones are:
+
+Where do I install—production or sandbox?
+In general, an AppExchange best practice is to install first in a sandbox. With reports and dashboards, here are a few considerations:
+Some of the packages come bundled with a handful of custom fields.
+Reports, dashboards, folders, and custom fields all have names, which can conflict with existing names in your org.
+Packages all come with report and/or dashboard folders.
+Once you know what specifically you’re installing, you can decide where you want to install it. 
+
+Do you want to give permissions to admins only, all users, or specific profiles?
+Who can have access to these reports, dashboards, folders, and in some cases, custom fields? This is an area where you want to do a bit of preplanning before you install, so you don’t have to make updates to profiles and folder sharing settings after you install.
+Once your installation is successful, you receive an email confirmation. Now you’re ready to go!
+
+Access Installed Packages
+Here’s how to find what you just installed.
+
+From Setup, enter Installed Packages in the Quick Find box, then select Installed Packages.
+Click the name of your installed package. This will be the same name on the page where you downloaded the package from AppExchange.
+Click View Components.
+This opens the Package Details page, where you can see all the components, including reports, dashboards, folders, custom fields, and more. The easiest way to browse all the reports and dashboards is to view them from the Reports tab in Salesforce.
+Now you can see all the reports and dashboards you just installed.
+
+Modify Reports
+The very first thing to remember before modifying an existing report is to make a copy so you don't write over a report that you or someone else might want to keep!
+
+To make a copy of a report, open it and click Save As[1].
+
+As you’re getting started with modifying an existing report, try doing simple things like adding and removing columns, changing the column order, and changing the date range field and criteria. You can also add new filters and change the report format as you get more comfortable. As you make changes, remember to save often and click Run Report to see your finished result, as the preview pane only displays a limited set of records.
+
+Modify Dashboards
+As with reports, make sure you make a copy so that you don’t mess up someone else’s dashboard!
+
+To copy the dashboard, open it up, click the arrow to the right of the Edit button and select Save As.
+
+Enter a name, specify a folder, and click Create. Then click Edit to open the dashboard in edit mode in the drag-and-drop dashboard builder. Now you can see how the dashboard was initially created. Let’s take a closer look.
+
+
+
+Adding Leads to Salesforce
+Let’s add a lead. Later, we’ll practice moving the lead along a pipeline.
+
+Click the Lead tab.
+Click New.
+Add a lead record for Aparna Bosu.
+First name: Aparna
+Last name: Bosu
+Company: Get Cloudy West
+Title: Marketing Manager
+Email: aparna@gogetcloudywest.com
+Lead Status: Open - Not Contacted
+Enter any other information you have about the lead.
+Click Save.
+
+
+Convert Leads to Opportunities, Accounts, and Contacts
+
+On the Leads tab, open Aparna’s lead record.
+Click Convert.
+In the Account section, create an account from the Company name entered for the lead. If you’re converting a lead who works for an existing account, you select the existing account instead.
+In the Contact section, create a contact from the name entered for the lead. If the contact exists, you select the existing contact instead.
+In the Opportunity section, enter a name for the new opportunity. Give the opportunity a descriptive name. For example, use the account name and a summary of the products they might buy, such as “Get Cloudy West - 50 Custom Stratus X11 Sneakers.”
+Check that the Record Owner and Converted Status are correct.
+Click Convert.
+
+
+
+Manage Records in the Kanban View
+The Kanban view is a visual summary of the records in a list view. It gives you a big picture view of all your work and lets you easily sort, summarize, filter, and move your opportunities along your pipeline. You can use the Kanban view as a workspace. Let’s check out the Kanban view for opportunities.
+
+Select the Opportunities tab.
+Select the All Opportunities list view.
+From the Display As menu (Display As menu icon), select Kanban.
+We’ve picked the All Opportunities list view because it gives us the most data to work with in this unit, but you can view the Kanban view on almost any list view.
+
+
+Move an Opportunity to the Next Stage
+By default, the Kanban for opportunities is organized by Stage. Each column represents one stage.
+
+Here’s how easy it is to move an opportunity to the next stage in this view.
+
+Click any deal in the column on the left.
+While holding down the mouse, drag the deal’s card into a different column.
+Release the mouse button.
+
+
+
+Filter the Kanban View
+When business is booming, you may want to narrow down your records to see just a subset of your records. Filters are an easy way to quickly and temporarily reduce the records in your list view to just the ones you’re looking for.
+
+Click Show filters.
+Click Add Filter.
+Add the filter:
+Field: Account Name
+Operator: contains
+Value: United Oil
+Click Done.
+Click Save.
+To hide the filter settings, click the right arrow.
+
+
+
+Change the Kanban View
+You probably thought you’d learned everything there was to discover about the Kanban view. After all, it looks so simple. But the Kanban view is a powerful tool, and there are a few more ways you can use it to view your records.
+
+By default, the Kanban view for opportunities organizes your records into columns by Stage, and shows a summary of the deals in each column based on the sum of the Amounts of each column’s opportunities. But you can change both what columns records are organized into, and what number is used in the summary.
+
+Click List View Controls (List View Controls icon) and select Kanban Settings.
+Change Summarize By to Expected Revenue.
+Change Group By to Type.
+Click Save.
+
+
+A Note About Terminology
+You may have heard several terms used interchangeably when referring to flows. As a reminder, the official terms are:
+
+Salesforce Flow—the product that encompasses building, managing, and running flows and processes.
+Flow Builder—a point-and-click tool for building flows. Watch the Flow Builder video to learn more. 
+Flow—the part of Salesforce Flow that automates a business process by collecting data and doing something in your Salesforce org or an external system.
+In short, the Salesforce Flow product includes multiple tools. One of them, Flow Builder, helps you create flows.
+
+
+
+
+Create the Flow and Add a Screen
+From Setup, enter Flows in the Quick Find box, then select Flows.
+Click New Flow, select Screen Flow, and click Create.
+From the canvas, click Add Element.
+Click Screen. The New Screen window opens.
+Under Screen Properties for Label, enter Contact Info.
+The API Name is automatically set to Contact_Info.
+Click Done. The canvas now includes three items: Start, Contact Info, and End
+Click Save, and enter these values
+Click Save
+
+
+Create a Record Variable for the Contact
+Because you plan to capture contact information from the user, let’s create a record variable to store that contact record data in the flow.
+
+In the Manager tab, click New Resource
+For Resource Type, select Variable.
+For API Name, enter contact.
+For Data Type, select Record.
+For Object, enter Contact.
+Click Done. In the toolbox, the Manager tab now contains a contact record variable resource
+Click Save.
+
+
+Add a Name Input Component to the Screen
+You need to create form fields for the user to enter contact information on the screen. Let’s start with an input component that collects the contact’s name.
+
+On the canvas, double-click the Contact Info screen. The Edit Screen window opens.
+In the Components pane, enter Name in the search box.
+Drag Name onto the screen canvas
+In the properties pane, for API Name, enter contactName.
+Scroll down and click Advanced. Make sure Manually assign variables is selected.
+Complete these steps to take what the user enters in the First Name and Last Name fields and store those values in the contact record variable.
+For First Name, enter {!contact.FirstName}.
+For Last Name, enter {!contact.LastName}.
+Click Done.
+Click Save.
+
+
+
+Add a Picklist Input Component to the Screen
+Now let’s add the picklist for the user to select the contact’s parent account.
+
+On the canvas, double-click the Contact Info screen.
+In the Screen Components pane, enter Picklist in the search box.
+Drag Picklist onto the screen canvas just below the Name component.
+In the Store More Account Field Values section, complete these steps to store the ID of the user-selected account in the contact record variable.
+For Field, select Id.
+For Variable, enter {!contact.AccountId}.
+Click Done twice.
+Click Save.
+
+
+
+Add a Toggle Input Component to the Screen
+Now let’s add the toggle for the user to specify whether (or not) to update an existing contact if one is found.
+
+On the canvas, double-click the Contact Info screen.
+From the Screen Components pane, drag Toggle onto the screen canvas just below the Account picklist component.
+In the properties pane, enter these values
+Click Done.
+Click Save.
+
+
+
+https://th-apex-http-callout.herokuapp.com
+https://th-apex-soap-service.herokuapp.com
+Authorize both of these endpoint URLs by following these steps.
+
+From Setup, enter Remote Site Settings in the Quick Find box, then click Remote Site Settings.
+Click New Remote Site.
+For the remote site name, enter animals_http.
+For the remote site URL, enter https://th-apex-http-callout.herokuapp.com.
+This URL authorizes all subfolders for the endpoint, like https://th-apex-http-callout.herokuapp.com/path1 and https://th-apex-http-callout.herokuapp.com/path2.
+
+For the description, enter Trailhead animal service: HTTP.
+Click Save & New.
+For the second remote site name, enter animals_soap.
+For the remote site URL, enter https://th-apex-soap-service.herokuapp.com.
+For the description, enter Trailhead animal service: SOAP.
+Click Save.
+
+</p>
+</div>
+
+</body>
+</html>

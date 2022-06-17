@@ -1,0 +1,10 @@
+body{
+	background-color: lightblue;
+}
+footer{
+	font-family: verdana;
+background-color: black;
+color: white;
+height: 5vh;
+text-align: center;
+}
